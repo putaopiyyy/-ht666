@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+.content {
+  background: #f7f7f7;
+  min-height: 100vh;
+  font-size: 14px;
+  padding-bottom: 40rpx;
+}
+.box {
+  background: #fff;
+  border-radius: 16rpx;
+  margin: 15px 15px 0;
+}
+.box .head {
+  padding: 15px;
+  border-bottom: 1rpx solid #f7f7f7;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.box .head image {
+  vertical-align: middle;
+}
+.box .head .status {
+  color: #f96f55;
+}
+.box .content2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  padding: 15px;
+}
+.box .content2 .goods-img {
+  width: 150rpx;
+  border-radius: 15rpx;
+  margin-right: 20rpx;
+}
+.box .content2 .right {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.box .content2 .right .title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+.box .content2 .right .price {
+  font-weight: 600;
+}
+.box .content2 .right .gray {
+  font-size: 12px;
+  color: #9f9ea1;
+}
+.box .content2 .right .gray .gopay {
+  background: #ffe8e4;
+  color: #f96f55;
+  border-radius: 30rpx;
+  padding: 4rpx 20rpx;
+  margin-left: 10rpx;
+}
+.box .btns {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+  padding: 15px;
+}
+.box .btns view {
+  padding: 0 20rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  border-radius: 50rpx;
+}
+.box .btns .btn1 {
+  color: #666464;
+  border: 1px solid #666464;
+  margin-right: 20rpx;
+}
+.box .btns .btn2 {
+  color: #f96f55;
+  border: 1px solid #f96f55;
+}
+.swiper-box {
+  height: calc(100% - 40px);
+}
+.list-scroll-content {
+  height: 100%;
+}
+.navbar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  height: 50px;
+  padding: 0 5px;
+  background: #fff;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.06);
+  position: relative;
+  z-index: 10;
+}
+.navbar .nav-item {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+          align-items: center;
+  height: 100%;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+}
+.navbar .nav-item.current {
+  color: #f96f55;
+}
+.navbar .nav-item.current:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 44px;
+  height: 0;
+  border-bottom: 3px solid #f96f55;
+}
+.uni-swiper-item {
+  height: auto;
+}
+
